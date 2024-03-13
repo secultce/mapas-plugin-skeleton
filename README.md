@@ -29,7 +29,15 @@ git clone git@github.com:secultce/mapas-plugin-skeleton.git nome-do-seu-plugin
 
 ```
 - Lembre-se de substituir "nome-do-seu-plugin" pelo nome que você dará ao seu plugin.
-- Após clonar o projeto, substitua os namespaces e nomes de arquivos para atender as necessidades do seu plugin.
+  
+#### Após clonar o projeto, substitua os namespaces e nomes de arquivos para atender as necessidades do seu plugin.
+- Para habilitar o plugin na aplicação é necessário colocá-lo no array de plugins habilitados na configuração da aplicação **(dev/config.d/plugins.php)** :
+
+```bash
+    'plugins' => [
+        'MeuPlugin' => ['namespace' => 'MeuPlugin']
+    ]
+```
 
 ## Contribuição
 
